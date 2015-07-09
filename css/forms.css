@@ -1,0 +1,243 @@
+/* Form style
+========================================================================== */
+/* text
+-------------------------------------------------------------------------- */
+input[type="text"],
+input[type="password"] {
+	color: #777;
+	border: 1px solid #bbb;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 14px;
+	height: 30px;
+	padding: 2px 6px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+	outline: none;
+}
+/* placeholder */
+input[placeholder]::-webkit-input-placeholder {
+	color: #ccc;
+	font-size: .8rem;
+}
+
+
+/* button + class = mortion + {type}
+-------------------------------------------------------------------------- */
+input[type="button"],
+button {
+	color: #fff;
+	border: 1px solid #fff;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+	border-radius: 4px;
+	padding: 2px 6px;
+}
+
+
+/* button - mortion
+.......................................................................... */
+input[type="button"].mortion,
+button.mortion {
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	line-height: 1.5em;
+	outline: none;
+}
+
+input[type="button"].mortion::before,
+button.mortion::before,
+input[type="button"].mortion::after,
+button.mortion::after {
+	position: absolute;
+	z-index: -1;
+	display: block;
+	content: ' ';
+}
+
+input[type="button"].mortion,
+button.mortion,
+input[type="button"].mortion::before,
+button.mortion::before,
+input[type="button"].mortion::after,
+button.mortion::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+/** type: spacing */
+.mortion_spacing:hover {
+	letter-spacing: 2px;
+
+}
+
+/** type: whiteout */
+.mortion_whiteout {
+	border: 2px solid #70afc7;
+}
+.mortion_whiteout:hover {
+	border: 2px solid #608fa7;
+	background-color: #fff;
+	color: #608fa7;
+}
+
+/** type: transparent */
+.mortion_transparent {
+	background-color: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+}
+.mortion_transparent:hover {
+	background-color: rgba(255, 255, 255, .2);
+}
+
+
+/* radio / checkbox
+	+ prev: label class = radio / label class = checkbox
+-------------------------------------------------------------------------- */
+input[type="radio"],
+input[type="checkbox"] {
+	display: none;
+}
+
+.radio,
+.checkbox {
+	box-sizing: border-box;
+	-webkit-transition: background-color .2s linear;
+	transition: background-color .2s linear;
+	position: relative;
+	display: inline-block;
+	margin: 0 20px 8px 0;
+	padding: 12px 12px 12px 42px;
+	border-radius: 8px;
+	/*background-color: #f6f7f8;*/
+	vertical-align: middle;
+	cursor: pointer;
+}
+.radio:hover,
+.checkbox:hover {
+	/*background-color: #e2edd7;*/
+}
+.radio:hover:after,
+.checkbox:hover:after {
+	border-color: #70afc7;
+}
+.radio:after,
+.checkbox:after {
+	-webkit-transition: border-color .2s linear;
+	transition: border-color .2s linear;
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	display: block;
+	margin-top: -10px;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #bbb;
+	border-radius: 6px;
+	content: '';
+}
+.radio:before {
+	-webkit-transition: opacity .2s linear;
+	transition: opacity .2s linear;
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	display: block;
+	margin-top: -5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #70afc7;
+	content: '';
+	opacity: 0;
+}
+input[type="radio"]:checked + .radio:before {
+  opacity: 1;
+}
+
+.checkbox:before {
+	-webkit-transition: opacity .2s linear;
+	transition: opacity .2s linear;
+	position: absolute;
+	top: 50%;
+	left: 21px;
+	display: block;
+	margin-top: -7px;
+	width: 5px;
+	height: 9px;
+	border-right: 3px solid #70afc7;
+	border-bottom: 3px solid #70afc7;
+	content: '';
+	opacity: 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+input[type=checkbox]:checked + .checkbox:before {
+  opacity: 1;
+}
+
+/* select
+	+ parent: div class = select, next: span class = carat
+-------------------------------------------------------------------------- */
+.select {
+	cursor: pointer;
+	display: inline-block;
+	height: 30px;
+	padding-right: 0;
+	position: relative;
+}
+	.select select {
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		background-color: #fff;
+		border: 1px solid #bbb;
+		border-radius: 4px;
+		box-sizing: border-box;
+		color: #555;
+		cursor: pointer;
+		font-size: 0.9em;
+		height: inherit;
+		line-height: 0.92em;
+		margin-bottom: 3px;
+		padding: 2px;
+		padding-left: 8px;
+		text-overflow: '';
+		vertical-align: middle;
+		width: 100%;
+		/*margin-left: 3px;*/
+	}
+	.select select:hover {
+		border: 1px solid #70afc7;
+	}
+	select + .carat {
+		cursor: pointer;
+		position: absolute;
+		right: 12px;
+		top: 50%;
+		margin-top: -4px;
+		border: 6px solid transparent;
+		border-top: 8px solid #bbb;
+	}
+	select + .carat:hover {
+		border-top-color: #70afc7;
+	}
+	select + .carat:active {
+		border-top-color: #70afc7;
+	}
+
+/* textarea
+-------------------------------------------------------------------------- */
+textarea {
+	color: #777;
+	padding: 6px 8px;
+	text-align: left;
+	border-radius: 4px;
+	border: 1px solid #bbb;
+}

@@ -5,7 +5,7 @@ var common = common || {};
 
 common.init = function() {
 
-	common.loadMessage();
+	// common.loadMessage();
 };
 
 common.submit = function(action, params) {
@@ -59,18 +59,18 @@ common.popupMessage = function(title, message, _buttons) {
 	var argsLen = arguments.length;
 	if (argsLen < 3) {
 		var _buttons = {
-			'確認': function() {
+			'OK': function() {
 				$(this).dialog('close');
 			}
 		}
 	}
 
-	$('#dialogMessage')
+	$('#dialog')
 		.dialog({
 			width: 320,
 			modal: true,
 			position: {
-				of : '#mainHeader',
+				of : '#main-header',
 				at: 'center top',
 				my: 'center top'
 			},

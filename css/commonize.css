@@ -68,7 +68,7 @@ input[type="text"]:hover,
 input[type="password"]:hover,
 textarea:hover,
 input[type="button"]:active,
-button:active{
+button:active {
 	border: 1px solid #8FCC42;
 }
 
@@ -77,12 +77,27 @@ button {
 	background-color: #8FCC42;
 }
 
+/* object theme color - bold
+-------------------------------------------------------------------------- */
+input[type="button"].bold,
+button.bold {
+	background-color: #44b216;
+}
+
 /* object theme color - active
 -------------------------------------------------------------------------- */
 input[type="button"]:hover,
 button:hover {
 	background-color: rgba(143, 204, 66, 0.8);
 }
+
+/* bold */
+input[type="button"].bold:hover,
+button.bold:hover {
+	background-color: rgba(68, 178, 22, 0.8);
+}
+
+
 
 /* layout
 ========================================================================== */

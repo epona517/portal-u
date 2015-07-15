@@ -1,7 +1,7 @@
 /* Header
 ========================================================================== */
 #main-header {
-	box-shadow: 0px 1px 1px #ccc;
+	box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, .2);
 	font-size: 20px;
 	height: 40px;
 	line-height: 40px;
@@ -9,12 +9,14 @@
 	top: 0; left: 0;
 	text-shadow: 0px 1px 1px #888;
 	width: 100%;
+	z-index: 2;
 }
+
 /* Contents
 ========================================================================== */
 #main-contents {
 	margin: 0 auto;
-	padding-top: 44px;
+	padding-top: 54px;
 	text-align: left;
 	width: 840px;
 }
@@ -27,7 +29,8 @@
 .cts_artcl {
 	background-color: #fbfbfb;
 	border-radius: 10px;
-	margin: 0 auto;
+	box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, .2);
+	margin: 0 auto 48px auto;
 	padding: 8px 0 8px 0;
 	width: 90%;
 }
@@ -36,13 +39,13 @@
 		margin: 0 0 12px 8px;
 	}
 		.cts_artcl > h1 > .fa {
-			/*color: #6C90FF;*/
+			color: #6C90FF;
 			margin-right: -8px;
 		}
-	.cts_artcl > h1::after {
-		border-bottom: 1px solid #888;
-		border-top: 1px solid #888;
-		background-color: #ccc;
+	.cts_artcl > h1:after {
+		border-bottom: 1px solid #6C90FF;
+		border-top: 1px solid #6C90FF;
+		background-color: #6C90FF;
 		content: "";
 		display: block;
 		height: 2px;
@@ -54,33 +57,59 @@
 		margin: 12px 0 12px 24px;
 	}
 
-	.cts_artcl > h3 {
-		background-color: #e7e3e3;
-		border-radius: 4px;
+	.cts_artcl > h2 + p,
+	.cts_artcl > h2 + ul {
 		margin: 12px 0 12px 40px;
-		padding: 6px 8px;
-		width: 90.7%;
 	}
 
-	.cts_artcl > ul {
-		margin-left: 48px;
+	.artcl_explain {
+		background-color: #e7e3e3;
+		box-sizing: border-box;
+		font-size: .68em;
+		line-height: 1.4;
+		margin: 12px auto 12px auto;
+		padding: 8px;
+		width: 95%;
 	}
 
-/* Object Class
--------------------------------------------------------------------------- */
-ul.FloatList {
-	display: table;
-	width: 90%;
-}
-	.FloatList > li {
-	 	display: table-cell;
+	.artcl_single-btn {
+		margin: 24px auto;
+		text-align: center;
+		width: 100%;
 	}
-		.FloatList > li > button {
-			/*box-sizing: border-box;*/
-			/*width: 70%;*/
-			padding: 6px 12px;
+		.artcl_single-btn > button {
+			width: 90%;
 		}
 
 
+/* Footer
+========================================================================== */
+#main-footer {
+	height: 80px;
+	width: 100%;
+}
+/* Object Class
+-------------------------------------------------------------------------- */
+dl.FloatLists {
+	margin: 12px 0 12px 40px;
+}
+	dl.FloatLists > dt:before {
+		/*clear: both;*/
+		content: "";
+		display: inline-block;
+		width: 100%;
+	}
+	dl.FloatLists > dt {
+		display: inline-block;
+		margin: 0px 32px 12px 0px;
+	}
+		dl.FloatLists > dd {
+			display: inline-block;
+			margin-left: 32px;
+		}
+
+.jsAccessBtn {
+	width: 140px;
+}
 
 

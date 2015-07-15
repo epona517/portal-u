@@ -18,10 +18,12 @@
 	<link rel="stylesheet" href="css/normalize.css" media="all" />
 	<link rel="stylesheet" href="css/commonize.css" media="all" />
 	<link rel="stylesheet" href="css/forms.css" media="all" />
+	<link rel="stylesheet" href="css/jquery-ui.min.css" media="all" />
 	<link rel="stylesheet" href="css/awesome/css/font-awesome.min.css" media="all" />
 	<link rel="stylesheet" href="css/home.css" media="all" />
 	<!-- js -->
 	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/common.js"></script>
 	<script src="js/home.js"></script>
 </head>
@@ -34,56 +36,233 @@
 	<!-- Contents -->
 	<section id="main-contents">
 		<section class="cts_explain">
-			<p>プロジェクトに関連する情報を記載します。
+			<p>プロジェクトに関連する情報を記載します。</p>
 		</section>
 
+		<!-- Access -->
 		<article class="cts_artcl">
 			<h1>
 				<i class="fa fa-wifi"></i>
 				Access
 			</h1>
+
 			<p class="artcl_explain">
+				各社のアプリケーションサイトのリンク一覧。<br>
+				開発環境(Local)、デモ環境(Demo)、本番環境(Genuine)。
+			</p>
 
-			<h2>Tttt社</h2>
-			<h3>○○版</h3>
-			<ul class="FloatList">
-				<li>
-					<button class="jsAccessBtn" data-domain="localhost:8080" data-pass="">
+			<h2>Txxx社</h2>
+			<!-- <h3>○○版</h3> -->
+			<dl class="FloatLists">
+				<dt>○○版</dt>
+				<dd>
+					<button class="jsAccessBtn mortion mortion_spacing" data-domain="localhost:8080" data-pass="Test">
 					<i class="fa fa-gavel"></i>
 						Local
 					</button>
-				<li>
-					<button class="jsAccessBtn" data-domain="" data-pass="">
+				</dd>
+				<dd>
+					<button class="jsAccessBtn mortion mortion_spacing" data-domain="" data-pass="">
 					<i class="fa fa-flask"></i>
 						Demo
 					</button>
-				<li>
-					<button class="jsAccessBtn" data-domain="" data-pass="">
+				</dd>
+				<dd>
+					<button class="bold jsAccessBtn jsConfirm mortion mortion_spacing" data-domain="honban" data-pass="Test">
 					<i class="fa fa-globe"></i>
 						Genuine
 					</button>
-			</ul>
-
-			<h3>○○版</h3>
-			<ul class="FloatList">
-				<li>
-					<button class="jsAccessBtn" data-domain="localhost:8080" data-pass="">
+				</dd>
+				<br>
+				<dt>XX版</dt>
+				<dd>
+					<button class="jsAccessBtn mortion mortion_spacing" data-domain="localhost:8080" data-pass="">
 					<i class="fa fa-gavel"></i>
 						Local
 					</button>
-				<li>
-					<button class="jsAccessBtn" data-domain="" data-pass="">
+				</dd>
+				<dd>
+					<button class="jsAccessBtn  mortion mortion_spacing" data-domain="" data-pass="">
 					<i class="fa fa-flask"></i>
 						Demo
 					</button>
-				<li>
-					<button class="jsAccessBtn" data-domain="" data-pass="">
+				</dd>
+				<dd>
+					<button class="bold jsAccessBtn  mortion mortion_spacing" data-domain="" data-pass="">
 					<i class="fa fa-globe"></i>
 						Genuine
 					</button>
-			</ul>
+				</dd>
+			</dl>
+
+			<h2>Cxxxx社</h2>
+			<!-- <h3>○○版</h3> -->
+			<dl class="FloatLists">
+				<dt>○○版</dt>
+				<dd>
+					<button class="jsAccessBtn  mortion mortion_spacing" data-domain="localhost:8080" data-pass="">
+					<i class="fa fa-gavel"></i>
+						Local
+					</button>
+				</dd>
+				<dd>
+					<button class="jsAccessBtn  mortion mortion_spacing" data-domain="" data-pass="">
+					<i class="fa fa-flask"></i>
+						Demo
+					</button>
+				</dd>
+				<dd>
+					<button class="bold jsAccessBtn  mortion mortion_spacing" data-domain="" data-pass="">
+					<i class="fa fa-globe"></i>
+						Genuine
+					</button>
+				</dd>
+				<br>
+				<dt>XX版</dt>
+				<dd>
+					<button class="jsAccessBtn  mortion mortion_spacing" data-domain="localhost:8080" data-pass="">
+					<i class="fa fa-gavel"></i>
+						Local
+					</button>
+				</dd>
+				<dd>
+					<button class="jsAccessBtn  mortion mortion_spacing" data-domain="" data-pass="">
+					<i class="fa fa-flask"></i>
+						Demo
+					</button>
+				</dd>
+				<dd>
+					<button class="bold jsAccessBtn  mortion mortion_spacing" data-domain="" data-pass="">
+					<i class="fa fa-globe"></i>
+						Genuine
+					</button>
+				</dd>
+			</dl>
+
+			<h2>Tfxxx社</h2>
+			<!-- <h3>○○版</h3> -->
+			<dl class="FloatLists">
+				<dt>○○版</dt>
+				<dd>
+					<button class="jsAccessBtn  mortion mortion_spacing" data-domain="localhost:8080" data-pass="">
+					<i class="fa fa-gavel"></i>
+						Local
+					</button>
+				</dd>
+				<dd>
+					<button class="jsAccessBtn  mortion mortion_spacing" data-domain="" data-pass="">
+					<i class="fa fa-flask"></i>
+						Demo
+					</button>
+				</dd>
+				<dd>
+					<button class="bold jsAccessBtn  mortion mortion_spacing" data-domain="" data-pass="">
+					<i class="fa fa-globe"></i>
+						Genuine
+					</button>
+				</dd>
+				<br>
+				<dt>XX版</dt>
+				<dd>
+					<button class="jsAccessBtn  mortion mortion_spacing" data-domain="localhost:8080" data-pass="">
+					<i class="fa fa-gavel"></i>
+						Local
+					</button>
+				</dd>
+				<dd>
+					<button class="jsAccessBtn  mortion mortion_spacing" data-domain="" data-pass="">
+					<i class="fa fa-flask"></i>
+						Demo
+					</button>
+				</dd>
+				<dd>
+					<button class="bold jsAccessBtn  mortion mortion_spacing" data-domain="" data-pass="">
+					<i class="fa fa-globe"></i>
+						Genuine
+					</button>
+				</dd>
+			</dl>
 
 		</article>
+
+		<!-- Redmine -->
+		<article class="cts_artcl">
+			<h1>
+				<i class="fa fa-tags"></i>
+				Redmine
+			</h1>
+
+			<p class="artcl_explain">
+				プロジェクトで運用されているRedmine。
+			</p>
+
+			<p class="artcl_single-btn">
+				<button class="jsLinkBtn mortion mortion_spacing" data-href="http://www.google.co.jp">
+					<i class="fa fa-link"></i>
+					Link
+				</button>
+			</p>
+		</article>
+
+		<!-- Active Directory -->
+		<article class="cts_artcl">
+			<h1>
+				<i class="fa fa-folder-open"></i>
+				Active Directory
+			</h1>
+
+			<p class="artcl_explain">
+				プロジェクトに関連するADサーバ上のリンク一覧。
+			</p>
+
+			<h2>提案</h2>
+			<ul>
+				<li>
+					<a href="http://www.google.co.jp" target="_blank">
+						<i class="fa fa-folder-o"></i>
+						2014年度上期まで
+					</a>
+				<li>
+					<a href="http://www.google.co.jp" target="_blank">
+						<i class="fa fa-folder-o"></i>
+						2015年度
+					</a>
+			</ul>
+
+			<h2>melon</h2>
+			<ul>
+				<li>
+					<a href="http://www.google.co.jp" target="_blank">
+						<i class="fa fa-folder-o"></i>
+						プロジェクト
+					</a>
+			</ul>
+
+			<h2>チームサーバ（）</h2>
+			<ul>
+				<li>
+					<a href="http://www.google.co.jp" target="_blank">
+						<i class="fa fa-folder-o"></i>
+						プロジェクト
+					</a>
+			</ul>
+		</article>
+
+		<!-- template -->
+		<article class="cts_artcl">
+			<h1>
+				<i class="fa fa-wifi"></i>
+				aaaaaaa
+			</h1>
+
+			<p class="artcl_explain">
+				aaaaaa
+
+			<h2>h2h2h2</h2>
+			<p>
+				bbb
+		</article>
+
 	</section>
 
 	<!-- Footer -->

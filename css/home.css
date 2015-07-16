@@ -21,6 +21,10 @@
 	width: 840px;
 }
 
+#artcl-access .FloatLists button {
+	width: 140px;
+}
+
 .cts_explain {
 	min-height: 40px;
 	padding: 4px 0;
@@ -66,11 +70,13 @@
 		background-color: #e7e3e3;
 		box-sizing: border-box;
 		font-size: .68em;
-		line-height: 1.4;
 		margin: 12px auto 12px auto;
 		padding: 8px;
 		width: 95%;
 	}
+		.artcl_explain > p {
+			line-height: 1.4;
+		}
 
 	.artcl_single-btn {
 		margin: 24px auto;
@@ -107,9 +113,5 @@ dl.FloatLists {
 			display: inline-block;
 			margin-left: 32px;
 		}
-
-.jsAccessBtn {
-	width: 140px;
-}
 
 

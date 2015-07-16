@@ -35,10 +35,12 @@ body {
 	color: #888;
 }
 
-a { color: rgba(255, 158, 133, 1);}
+a, .LikeA { color: rgba(255, 158, 133, 1);}
 a:visited { color: rgba(255, 158, 133, 1);}
-a:hover { color: rgba(255, 158, 133, 0.6);}
-a:active { color: rgba(255, 158, 133, 0.4);}
+a:hover,
+.LikeA:hover { color: rgba(255, 158, 133, 0.6);}
+a:active,
+.LikeA:active { color: rgba(255, 158, 133, 0.4);}
 
 /* font - white
 -------------------------------------------------------------------------- */
@@ -120,6 +122,13 @@ button.bold:hover {
 	content: "";
 	clear: both;
 	display: block;
+}
+.tadashi {
+	color: #e76;
+	font-weight: bold;
+}
+.LikeA {
+	cursor: pointer;
 }
 
 /* icon

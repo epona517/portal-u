@@ -84,12 +84,23 @@ common.popupMessage = function(title, message, _buttons) {
 				easing: 'swing',
 				effect: 'blind'
 			},
-			button: _buttons,
+			buttons: _buttons,
 			title: common.getMessageTitle(title)
 		})
 		.html(message)
 		.dialog('open');
 };
+
+common.getConfirmMessage = function($obj) {
+
+	var message = '';
+	// 本番環境確認メッセージ
+	if ($obj.hasClass('jsCnfmGenuine')) {
+		message = '本番環境へ接続します。<br>よろしいですか。';
+	}
+
+	return message;
+}
 
 common.getMessageTitle = function(key) {
 

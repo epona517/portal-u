@@ -1,7 +1,7 @@
 /* Header
 ========================================================================== */
 #main-header {
-	box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, .2);
+	/*box-shadow: 0px -4px 2px 6px rgba(0, 0, 0, .5);*/
 	font-size: 20px;
 	height: 40px;
 	line-height: 40px;
@@ -12,17 +12,64 @@
 	z-index: 2;
 }
 
+/* Navigation
+========================================================================== */
+#main-nav {
+	box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, .2);
+	min-height: 32px;
+	line-height: 32px;
+	position: fixed;
+	top: 40px; left: 0;
+	text-shadow: 0px 1px 1px #888;
+	width: 100%;
+	z-index: 2;
+}
+	#main-nav ul {
+		width: 100%;
+	}
+		.nav_menu {
+			box-sizing: border-box;
+			cursor: pointer;
+			float: left;
+			font-size: 12px;
+			overflow: hidden;
+			text-align: center;
+			text-shadow: 2px 2px 1px rgba(0, 0, 0, .3);
+			transition: background-color .7s ease-in;
+			word-break: break-all;
+			word-wrap: break-word;
+		}
+		.nav_menu:hover {
+			background-color: #6C90FF;
+		}
+		.nav_menu:after {
+			content: "";
+			clear: both;
+			display: block;
+		}
+			.nav_menu .fa {
+				color: #3A57B2;
+				background-color: #f3f4f1;
+				border: 1px solid #f3f4f1;
+				border-radius: 3px;
+				box-sizing: border-box;
+				padding: 2px;
+			}
+
 /* Contents
 ========================================================================== */
 #main-contents {
 	margin: 0 auto;
-	padding-top: 54px;
 	text-align: left;
 	width: 840px;
 }
 
-#artcl-access .FloatLists button {
+#artcl-access button {
 	width: 140px;
+}
+
+#artcl-access dt {
+	width: 60px;
 }
 
 .cts_explain {
@@ -100,7 +147,6 @@ dl.FloatLists {
 	margin: 12px 0 12px 40px;
 }
 	dl.FloatLists > dt:before {
-		/*clear: both;*/
 		content: "";
 		display: inline-block;
 		width: 100%;

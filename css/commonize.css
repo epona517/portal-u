@@ -48,6 +48,10 @@ a:active,
 	color: #fcfdfa;
 }
 
+#main-nav {
+	color: #f3f4f1;
+}
+
 /* font - implant
 -------------------------------------------------------------------------- */
 .implant {
@@ -55,13 +59,16 @@ a:active,
 	text-shadow: -1px -1px 1px #629371, 1px 1px 1px #dcddda;
 }
 
-/* background - green
+/* background - blue
 -------------------------------------------------------------------------- */
 #main-header {
 	background-color: #6C90FF;
-	/* TODO: ÒŠ¤¨¤Ê¤¤¤Î¤Ç¤¤¤Ã¤¿¤ó */
-	/*opacity: .3;*/
 	border: 1px #69f solid;
+}
+
+#main-nav {
+	background-color: #3A57B2;
+	/*border: 1px #35b solid;*/
 }
 
 /* object theme color - default

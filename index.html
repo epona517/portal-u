@@ -8,7 +8,7 @@
 
 	<title> PORTAL</title>
 	
-	<link rel="icon"	 type="image/png" href="" />
+	<link rel="icon" type="image/png" href="" />
 	<link rel="shortcut icon" type="/favicon.ico" href="" />
 	<link rel="apple-touch-icon" type="/apple-touch-icon.png" href="" />
 	
@@ -30,8 +30,13 @@
 <body>
 	<!-- Header -->
 	<header id="main-header">
-		<i class="fa fa-list"></i> PORTAL
-	</header>
+		<i class="fa fa-list"></i> PORTA
+L	</header>
+
+	<!-- Navigation -->
+	<nav id="main-nav">
+		<ul></ul>
+	</nav>
 
 	<!-- Contents -->
 	<section id="main-contents">
@@ -40,7 +45,7 @@
 		</section>
 
 		<!-- Access -->
-		<article id="artcl-access" class="cts_artcl">
+		<article id="artcl-access" class="cts_artcl jsInNav">
 			<h1>
 				<i class="fa fa-wifi"></i>
 				Access
@@ -186,7 +191,7 @@
 		</article>
 
 		<!-- Redmine -->
-		<article class="cts_artcl">
+		<article id="artcl-redmine" class="cts_artcl jsInNav">
 			<h1>
 				<i class="fa fa-tags"></i>
 				Redmine
@@ -205,7 +210,7 @@
 		</article>
 
 		<!-- Active Directory -->
-		<article class="cts_artcl">
+		<article id="artcl-ad" class="cts_artcl jsInNav">
 			<h1>
 				<i class="fa fa-folder-open"></i>
 				Active Directory
@@ -250,7 +255,8 @@
 		</article>
 
 		<!-- template -->
-		<article class="cts_artcl">
+		<!-- TODO: 実際に使用する場合は、articleのhiddenクラスを除去 -->
+		<article class="cts_artcl hidden">
 			<h1>
 				<i class="fa fa-wifi"></i>
 				aaaaaaa

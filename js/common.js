@@ -1,11 +1,28 @@
 /**
+ * Portal for Project
+ *
+ * Coyright (c) 2015 Tadashi Murakami.
+ * >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/**
  * common javascript
  */
 var common = common || {};
 
 common.init = function() {
 
-	// common.loadMessage();
+	common.adjustHeaderPadding();
+};
+
+
+/**
+ * コンテンツの上幅を調整する。
+ */
+common.adjustHeaderPadding = function() {
+
+	var total = $('#main-header').outerHeight() + $('#main-nav').outerHeight();
+	$('#main-contents').css('padding-top', total + 8);
+	return total;
 };
 
 common.submit = function(action, params) {
@@ -70,8 +87,8 @@ common.popupMessage = function(title, message, _buttons) {
 			width: 320,
 			modal: true,
 			position: {
-				of : '#main-header',
-				at: 'center top',
+				of : '#main-nav',
+				at: 'center bottom',
 				my: 'center top'
 			},
 			autoOpen: false,
